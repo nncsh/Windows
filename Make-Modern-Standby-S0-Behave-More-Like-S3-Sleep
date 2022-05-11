@@ -1,0 +1,11 @@
+#Confirm current standby budget is 5%
+powercfg /qh scheme_current sub_presence standbybudgetpercent
+
+#Set standby budget to 95%
+powercfg /setdcvalueindex scheme_current sub_presence standbybudgetpercent 95
+
+#Optionally disable network connectivity during connected standby with local GPO.
+Local Computer Policy\Computer Configuration\Administrative Templates\System\Power Management\Sleep Settings
+Allow network connectivity during connected-standby* -> Disabled
+
+#For better results set UEFI to S3 mode. This may be listed as 'Linux' vs 'Windows 10' for Modern S0.
