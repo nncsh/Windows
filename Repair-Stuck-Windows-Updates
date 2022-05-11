@@ -1,0 +1,11 @@
+#Locate Windows Update Service PID
+sc queryex wuauserv
+
+#Stop Windows Update
+taskkill /f /pid XXXX
+
+#Rename SoftwareDis folder
+C:\Windows\SoftwareDistribution -> C:\Windows\SoftwareDistribution.old
+
+#Install standalone updates downloaded from Microsoft Update Catalog. The KB numbers for these may have been identified as pending in the stuck Windows Update UI.
+Win-UpdateNumber1234.msu
