@@ -1,0 +1,16 @@
+usoclient.exe is used for CLI Windows Updates in Windows 10+
+
+Available switches are:
+
+RefreshSettings
+ResumeUpdate
+ScanInstallWait
+StartDownload
+StartInstall
+StartScan
+
+Basic example to trigger a check for updates (Note that there are no slashes and capital letters are important):
+
+usoclient StartScan
+
+To fully automate, combine ScanInstallWait and StartInstall with a reboot via shutdown or psshutdown etc.
