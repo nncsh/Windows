@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\Calendar]
+"EndEarlyLong"=dword:0000000a
+"EndEarlyShort"=dword:0000000a
+"ShortenEvents"="End_Early"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\Settings\Data]
+"global_End_long_meetings_by"="{\"name\":\"End_long_meetings_by\",\"itemClass\":\"RoamingSetting\",\"id\":\"\",\"scope\":\"global\",\"parentSetting\":\"\",\"secondaryKey\":\"\",\"status\":\"SYNCEDTOSERVICE\",\"type\":\"Int\",\"timestamp\":0,\"metadata\":\"\",\"value\":\"10\",\"isFirstSync\":\"false\",\"source\":\"UserOverride\"}"
+"global_End_Short_meetings_by"="{\"name\":\"End_Short_meetings_by\",\"itemClass\":\"RoamingSetting\",\"id\":\"\",\"scope\":\"global\",\"parentSetting\":\"\",\"secondaryKey\":\"\",\"status\":\"SYNCEDTOSERVICE\",\"type\":\"Int\",\"timestamp\":0,\"metadata\":\"\",\"value\":\"10\",\"isFirstSync\":\"false\",\"source\":\"UserOverride\"}"
+"global_shorten_event_scope"="{\"name\":\"shorten_event_scope\",\"itemClass\":\"RoamingSetting\",\"id\":\"\",\"scope\":\"global\",\"parentSetting\":\"\",\"secondaryKey\":\"\",\"status\":\"SYNCEDTOSERVICE\",\"type\":\"String\",\"timestamp\":0,\"metadata\":\"\",\"value\":\"End_Early\",\"isFirstSync\":\"false\",\"source\":\"UserOverride\"}"
