@@ -1,0 +1,4 @@
+Certreq -attrib "CertificateTemplate:WebServer"
+
+
+Then follow wizard with csr file etc
