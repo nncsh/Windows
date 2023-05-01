@@ -1,0 +1,11 @@
+The usual problem, whether you're migrating from IDE to AHCI or from AHCI to NVMe, is that the drivers are not configured to start on boot – they must be already present very early during the boot process, before the normal "device detection" system has been started. By default, Windows only boot-starts those drivers which were needed at installation time – the rest are still on the system but only get started "on demand" in a later phase.
+
+The generic Microsoft NVMe driver seems to be called stornvme. (For comparison, the generic SATA AHCI driver is storahci, though Intel RST has a different name.) You can change its configuration using sc from an administrator Command Prompt:
+
+sc config stornvme start= boot
+sc query stornvme
+sc qc stornvme
+
+
+
+https://superuser.com/posts/1452475/revisions
