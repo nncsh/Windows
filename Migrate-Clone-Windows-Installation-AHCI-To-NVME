@@ -17,7 +17,7 @@ TL;DR
     sc config stornvme start= boot
 - Shut down and immediately clone. Do not reboot the source machine as Windows may disable stornvme again. 
 
-- In Windows RE (and assuming you cannot see the nvme drive at all)
+- In Windows PE (and assuming you cannot see the nvme drive at all)
 - Connect a USB drive with the driver for the nvme
 - CD to the driver .inf file
 - drvload .inf
