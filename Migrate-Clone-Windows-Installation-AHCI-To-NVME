@@ -6,6 +6,13 @@ sc config stornvme start= boot
 sc query stornvme
 sc qc stornvme
 
-
-
 https://superuser.com/posts/1452475/revisions
+
+
+TL;DR
+- BEFORE YOU CLONEZILLA (or whatever app)
+- On the soure OS:
+- Disable fast startup (might not be needed but to be sure this takes)
+- Admin command prompt
+    sc config stornvme start= boot
+- Shut down and immediately clone. Do not reboot the source machine as Windows may disable stornvme again. 
