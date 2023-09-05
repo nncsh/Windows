@@ -1,3 +1,5 @@
+(Elevated cmd)
+
 Certreq -attrib "CertificateTemplate:WebServer"
 
 
