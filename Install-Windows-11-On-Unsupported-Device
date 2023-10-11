@@ -4,3 +4,8 @@ regedit
 HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig
 "BypassTPMCheck" dword:00000001
 "BypassSecureBootCheck" dword:00000001
+
+
+Alternatively:
+
+setup.exe /product server
